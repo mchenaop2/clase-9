@@ -28,11 +28,12 @@ port=1883
 #client1= paho.Client("GIT-HUB")
 #client1.on_message = on_message
 
-col1, col2 = st.columns([1, 2])
+
 
 
 st.title("Música")
 
+col1, col2 = st.columns([1, 2])
 with col1:
     st.subheader("Tristeza")
 
