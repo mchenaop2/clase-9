@@ -28,9 +28,12 @@ port=1883
 #client1= paho.Client("GIT-HUB")
 #client1.on_message = on_message
 
+col1, col2, = st.columns(3)
 
 
 st.title("Música")
+
+with col1:
 st.subheader("Tristeza")
 
 
@@ -60,7 +63,7 @@ if st.button('OFF',key="2"):
 else:
     st.write('')
 
-
+with col2:
 st.subheader("Romántico")
 
 
