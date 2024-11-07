@@ -66,6 +66,35 @@ with col1:
     else:
         st.write('')
 
+
+    st.subheader("Felicidad")
+    if st.button('ON',key="5"):
+        act1="ON"
+        client1= paho.Client("GIT-HUB")                           
+        client1.on_publish = on_publish                          
+        client1.connect(broker,port)  
+        message =json.dumps({"Act1":act1})
+        ret= client1.publish("cmqtt_s_Camila", message)
+ 
+    #client1.subscribe("Sensores")
+    
+    
+    else:
+        st.write('')
+
+    if st.button('OFF',key="6"):
+        act1="OFF"
+        client1= paho.Client("GIT-HUB")                           
+        client1.on_publish = on_publish                          
+        client1.connect(broker,port)  
+        message =json.dumps({"Act1":act1})
+        ret= client1.publish("cmqtt_s_Camila", message)
+  
+    
+    else:
+        st.write('')
+
+
 with col2:
     st.subheader("Romántico")
 
@@ -127,35 +156,7 @@ with col4:
         st.write('')
 
 
-col3, col4 = st.columns([3, 4])
-    
-with col3:
-    st.subheader("Felicidad")
-    if st.button('ON',key="5"):
-        act1="ON"
-        client1= paho.Client("GIT-HUB")                           
-        client1.on_publish = on_publish                          
-        client1.connect(broker,port)  
-        message =json.dumps({"Act1":act1})
-        ret= client1.publish("cmqtt_s_Camila", message)
- 
-    #client1.subscribe("Sensores")
-    
-    
-    else:
-        st.write('')
 
-    if st.button('OFF',key="6"):
-        act1="OFF"
-        client1= paho.Client("GIT-HUB")                           
-        client1.on_publish = on_publish                          
-        client1.connect(broker,port)  
-        message =json.dumps({"Act1":act1})
-        ret= client1.publish("cmqtt_s_Camila", message)
-  
-    
-    else:
-        st.write('')
 
 
 
