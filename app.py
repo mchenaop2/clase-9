@@ -158,7 +158,8 @@ with col2:
 
 
 
-
+with st.sidebar:
+    
     if st.button("Atras"):
         st.link_button("Home", "https://proyecto-final-ztvtetttkapfwq74usy7u6.streamlit.app/")
 
