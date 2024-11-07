@@ -64,7 +64,7 @@ with col1:
         st.write('')
 
     with col2:
-    st.subheader("Romántico")
+        st.subheader("Romántico")
 
 
 
