@@ -94,7 +94,9 @@ with col2:
     else:
         st.write('')
 
-
+    col3, col4 = st.columns([3, 4])
+    
+with col3:
     st.subheader("Felicidad")
 
 
@@ -125,7 +127,7 @@ with col2:
     else:
         st.write('')
 
-
+with col4:
     st.subheader("Meditación")
 
 
