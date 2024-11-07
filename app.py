@@ -33,17 +33,17 @@ col1, col2, = st.columns(3)
 
 st.title("Música")
 
-with col1:
-st.subheader("Tristeza")
+    with col1:
+        st.subheader("Tristeza")
 
 
-if st.button('ON',key="1"):
-    act1="ON"
-    client1= paho.Client("GIT-HUB")                           
-    client1.on_publish = on_publish                          
-    client1.connect(broker,port)  
-    message =json.dumps({"Act1":act1})
-    ret= client1.publish("cmqtt_s_Camila", message)
+        if st.button('ON',key="1"):
+        act1="ON"
+        client1= paho.Client("GIT-HUB")                           
+        client1.on_publish = on_publish                          
+        client1.connect(broker,port)  
+        message =json.dumps({"Act1":act1})
+        ret= client1.publish("cmqtt_s_Camila", message)
  
     #client1.subscribe("Sensores")
     
