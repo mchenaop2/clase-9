@@ -34,7 +34,7 @@ st.title("Iluminación")
 st.subheader("Relajación")
 
 
-if st.button('ON'):
+if st.button('ON',key="1"):
     act1="ON"
     client1= paho.Client("GIT-HUB")                           
     client1.on_publish = on_publish                          
@@ -48,7 +48,7 @@ if st.button('ON'):
 else:
     st.write('')
 
-if st.button('OFF'):
+if st.button('OFF',key="2"):
     act1="OFF"
     client1= paho.Client("GIT-HUB")                           
     client1.on_publish = on_publish                          
@@ -65,7 +65,7 @@ st.subheader("Concentración")
 
 
 
-if st.button('ON'):
+if st.button('ON',key="3"):
     act1="ON"
     client1= paho.Client("GIT-HUB")                           
     client1.on_publish = on_publish                          
@@ -79,7 +79,7 @@ if st.button('ON'):
 else:
     st.write('')
 
-if st.button('OFF'):
+if st.button('OFF',key="4"):
     act1="OFF"
     client1= paho.Client("GIT-HUB")                           
     client1.on_publish = on_publish                          
