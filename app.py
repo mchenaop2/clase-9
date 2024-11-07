@@ -99,9 +99,6 @@ col3, col4 = st.columns([3, 4])
     
 with col3:
     st.subheader("Felicidad")
-
-
-
     if st.button('ON',key="5"):
         act1="ON"
         client1= paho.Client("GIT-HUB")                           
@@ -130,9 +127,6 @@ with col3:
 
 with col4:
     st.subheader("Meditación")
-
-
-
     if st.button('ON',key="7"):
         act1="ON"
         client1= paho.Client("GIT-HUB")                           
