@@ -30,7 +30,7 @@ port=1883
 
 
 
-st.title("Iluminación")
+st.title("Temperatura")
 st.subheader("Relajación")
 
 
