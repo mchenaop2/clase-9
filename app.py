@@ -30,7 +30,9 @@ port=1883
 
 
 
-st.title("MQTT Control")
+st.title("Iluminación")
+st.subheader("Relajación")
+
 
 if st.button('ON'):
     act1="ON"
@@ -57,6 +59,41 @@ if st.button('OFF'):
     
 else:
     st.write('')
+
+
+st.subheader("Concentración")
+
+
+
+if st.button('ON'):
+    act1="ON"
+    client1= paho.Client("GIT-HUB")                           
+    client1.on_publish = on_publish                          
+    client1.connect(broker,port)  
+    message =json.dumps({"Act1":act1})
+    ret= client1.publish("cmqtt_s_Camila", message)
+ 
+    #client1.subscribe("Sensores")
+    
+    
+else:
+    st.write('')
+
+if st.button('OFF'):
+    act1="OFF"
+    client1= paho.Client("GIT-HUB")                           
+    client1.on_publish = on_publish                          
+    client1.connect(broker,port)  
+    message =json.dumps({"Act1":act1})
+    ret= client1.publish("cmqtt_s_Camila", message)
+  
+    
+else:
+    st.write('')
+
+
+
+
 
 values = st.slider('Selecciona el rango de valores',0.0, 100.0)
 st.write('Values:', values)
