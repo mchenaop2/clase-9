@@ -31,9 +31,11 @@ port=1883
 
 
 
-st.title("Música")
+
 
 col1, col2 = st.columns([1, 2])
+
+st.title("Música")
 with col1:
     st.subheader("Tristeza")
 
