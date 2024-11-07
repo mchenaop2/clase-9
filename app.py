@@ -63,8 +63,8 @@ with col1:
     else:
         st.write('')
 
-    with col2:
-        st.subheader("Romántico")
+with col2:
+    st.subheader("Romántico")
 
 
 
