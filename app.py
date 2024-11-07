@@ -127,7 +127,6 @@ with col2:
         st.write('')
 
 
-with col4:
     st.subheader("Meditación")
     if st.button('ON',key="7"):
         act1="ON"
