@@ -30,8 +30,8 @@ port=1883
 
 
 
-st.title("musica")
-st.subheader("Relajación")
+st.title("Música")
+st.subheader("Tristeza")
 
 
 if st.button('ON',key="1"):
@@ -61,7 +61,7 @@ else:
     st.write('')
 
 
-st.subheader("Concentración")
+st.subheader("Romántico")
 
 
 
@@ -92,7 +92,7 @@ else:
     st.write('')
 
 
-st.subheader("Fiesta")
+st.subheader("Felicidad")
 
 
 
@@ -123,7 +123,7 @@ else:
     st.write('')
 
 
-st.subheader("Despertar")
+st.subheader("Meditación")
 
 
 
