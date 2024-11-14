@@ -154,7 +154,7 @@ with col2:
 
 
     st.subheader("Cine")
-    if st.button('ON',key="7"):
+    if st.button('ON',key="9"):
         act1="ON"
         client1= paho.Client("GIT-HUB")                           
         client1.on_publish = on_publish                          
@@ -168,7 +168,7 @@ with col2:
     else:
         st.write('')
 
-    if st.button('OFF',key="8"):
+    if st.button('OFF',key="10"):
         act1="OFF"
         client1= paho.Client("GIT-HUB")                           
         client1.on_publish = on_publish                          
