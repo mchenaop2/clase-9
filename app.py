@@ -185,9 +185,7 @@ if st.button('OFF',key="10"):
 else:
     st.write('')
 
-with st.sidebar:
-    if st.button("Atrás"):
-        st.link_button("Home", "https://proyecto-final-ztvtetttkapfwq74usy7u6.streamlit.app/")
+
 
 
 
