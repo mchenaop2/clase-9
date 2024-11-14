@@ -39,7 +39,7 @@ with col1:
 
 
     if st.button('ON',key="1"):
-        act1="ON"
+        act1="enciende las luces"
         client1= paho.Client("GIT-HUB")                           
         client1.on_publish = on_publish                          
         client1.connect(broker,port)  
@@ -53,7 +53,7 @@ with col1:
         st.write('')
 
     if st.button('OFF',key="2"):
-        act1="OFF"
+        act1="apaga las luces"
         client1= paho.Client("GIT-HUB")                           
         client1.on_publish = on_publish                          
         client1.connect(broker,port)  
