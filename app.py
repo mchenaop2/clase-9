@@ -44,7 +44,7 @@ with col1:
         client1.on_publish = on_publish                          
         client1.connect(broker,port)  
         message =json.dumps({"Act1":act1})
-        ret= client1.publish("cmqtt_s_Camila", message)
+        ret= client1.publish("camila_control", message)
  
     #client1.subscribe("Sensores")
     
@@ -58,7 +58,7 @@ with col1:
         client1.on_publish = on_publish                          
         client1.connect(broker,port)  
         message =json.dumps({"Act1":act1})
-        ret= client1.publish("cmqtt_s_Camila", message)
+        ret= client1.publish("camila_control", message)
   
     
     else:
