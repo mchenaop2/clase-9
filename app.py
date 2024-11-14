@@ -61,6 +61,8 @@ with col1:
         client1.connect(broker, port)
         message = json.dumps({"Act1": act1})
         ret = client1.publish("cmqtt_s_Camila", message)
+        st.audio("cat-purr.mp3", format="audio/mpeg", loop=True)
+
     else:
         st.write('')
 
@@ -125,6 +127,8 @@ with col2:
         client1.connect(broker, port)
         message = json.dumps({"Act1": act1})
         ret = client1.publish("cmqtt_s_Camila", message)
+        st.audio("cat-purr.mp3", format="audio/mpeg", loop=True)
+
     else:
         st.write('')
 
@@ -137,6 +141,8 @@ with col2:
         ret = client1.publish("cmqtt_s_Camila", message)
     else:
         st.write('')
+
+    
 
 with st.sidebar:
     if st.button("Atras"):
