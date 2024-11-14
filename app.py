@@ -12,7 +12,7 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 # Convertir la imagen de fondo local a base64
-background_image = get_base64_of_bin_file("imagenes/fondo.jpg")  # Cambia a la ruta de tu imagen local
+background_image = get_base64_of_bin_file("Fondo.png")  # Cambia a la ruta de tu imagen local
 
 # CSS para imagen de fondo
 page_bg_img = f'''
