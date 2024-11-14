@@ -1,11 +1,16 @@
 import os
 import streamlit as st
+from bokeh.models.widgets import Button
+from bokeh.models import CustomJS
+from streamlit_bokeh_events import streamlit_bokeh_events
 from PIL import Image
 import time
 import paho.mqtt.client as paho
 import json
 import base64  # Para convertir la imagen a base64
-import platform
+
+from gtts import gTTS
+from googletrans import Translator
 
 # Función para convertir la imagen a base64
 def get_base64_of_bin_file(bin_file):
@@ -27,13 +32,7 @@ page_bg_img = f'''
 '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# Muestra la versión de Python junto con detalles adicionales
-st.write("Versión de Python:", platform.python_version())
-
-values = 0.0
-act1 = "OFF"
-
-def on_publish(client, userdata, result):  # Función de callback para publicación
+def on_publish(client, userdata, result):  # Función de callback
     print("el dato ha sido publicado \n")
     pass
 
@@ -42,6 +41,7 @@ def on_message(client, userdata, message):
     time.sleep(2)
     message_received = str(message.payload.decode("utf-8"))
     st.write(message_received)
+
 
 # Configuración del broker MQTT
 broker = "157.230.214.127"
