@@ -93,7 +93,7 @@ with col1:
         st.write('')
 
 
-st.subheader("Cine")
+    st.subheader("Cine")
     if st.button('ON',key="9"):
         act1="ON"
         client1= paho.Client("GIT-HUB")                           
