@@ -66,15 +66,7 @@ with col1:
     else:
         st.write('')
 
-    if st.button('OFF', key="2"):
-        act1 = "OFF"
-        client1 = paho.Client("GIT-HUB")
-        client1.on_publish = on_publish
-        client1.connect(broker, port)
-        message = json.dumps({"Act1": act1})
-        ret = client1.publish("cmqtt_s_Camila", message)
-    else:
-        st.write('')
+   
 
     st.subheader("Felicidad")
     if st.button('ON', key="5"):
@@ -84,18 +76,11 @@ with col1:
         client1.connect(broker, port)
         message = json.dumps({"Act1": act1})
         ret = client1.publish("cmqtt_s_Camila", message)
+        st.audio("tristeza.mp3", format="audio/mp3", loop=True)
     else:
         st.write('')
 
-    if st.button('OFF', key="6"):
-        act1 = "OFF"
-        client1 = paho.Client("GIT-HUB")
-        client1.on_publish = on_publish
-        client1.connect(broker, port)
-        message = json.dumps({"Act1": act1})
-        ret = client1.publish("cmqtt_s_Camila", message)
-    else:
-        st.write('')
+   
 
 with col2:
     st.subheader("Romántico")
@@ -106,18 +91,11 @@ with col2:
         client1.connect(broker, port)
         message = json.dumps({"Act1": act1})
         ret = client1.publish("cmqtt_s_Camila", message)
+        st.audio("tristeza.mp3", format="audio/mp3", loop=True)
     else:
         st.write('')
 
-    if st.button('OFF', key="4"):
-        act1 = "OFF"
-        client1 = paho.Client("GIT-HUB")
-        client1.on_publish = on_publish
-        client1.connect(broker, port)
-        message = json.dumps({"Act1": act1})
-        ret = client1.publish("cmqtt_s_Camila", message)
-    else:
-        st.write('')
+  
 
     st.subheader("Meditación")
     if st.button('ON', key="7"):
@@ -132,15 +110,7 @@ with col2:
     else:
         st.write('')
 
-    if st.button('OFF', key="8"):
-        act1 = "OFF"
-        client1 = paho.Client("GIT-HUB")
-        client1.on_publish = on_publish
-        client1.connect(broker, port)
-        message = json.dumps({"Act1": act1})
-        ret = client1.publish("cmqtt_s_Camila", message)
-    else:
-        st.write('')
+   
 
     
 
