@@ -108,7 +108,7 @@ with col1:
     else:
         st.write('')
 
-        if st.button('OFF',key="10"):
+    if st.button('OFF',key="10"):
         act1="OFF"
         client1= paho.Client("GIT-HUB")                           
         client1.on_publish = on_publish                          
